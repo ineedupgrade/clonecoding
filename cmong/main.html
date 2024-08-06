@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전문가가 필요한 순간, 프리랜서 마켓 No.1 크몽</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Metro Sans', sans-serif;
+    }
+    .top {
+      width: 100%;
+      height: 48px;
+      background-color: rgb(255,212,0);
+      display: flex;
+    }
+    .top1 {
+      padding: 12px 200px 5px 140px;
+      font-size: 23px;
+    }
+    .top2 {
+      padding: 15px 100px 5px 455px;
+      font-size: 16.5px;
+    }
+    .section-head {
+      margin: 0px 120px;
+      padding: 0px 16px;
+    }
+    .head-name {
+      font-weight: bold;
+      font-size: 25px;
+    }
+    .headline {
+      display: flex;
+      width: 1300px;
+      height: 66px;
+      align-items: center;
+      text-align: center;
+      justify-items: center;
+    }
+    .head-list {
+      list-style: none;
+      display: flex;
+      margin: 0px 40px;
+    }
+    .head {
+      position: relative;
+      top: 10px;
+      margin: 0px 15px 0px 15px;
+    }
+    .head-sign {
+      position: relative;
+      margin: 0px 0px 0px 25px;
+      z-index: 30;
+      padding: 10px 10px;
+      background-color: rgb(255, 212, 0);
+      border-radius: 10px;
+    }
+    .head-search-outline {
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 620px;
+      height: 40px;
+      margin: 0px 15px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 45px;
+    }
+    .head-search-outline:hover {
+      background-color: rgb(227, 227, 227);
+    }
+    input[type="text"]:hover {
+      background-color: rgb(227, 227, 227);
+    }
+    input[type="text"] {
+      flex: 1;
+      border: 0;
+      height: 100%;
+      font-size: 14px;
+      padding: 0;
+      outline: none;
+    }
+    .search-icon {
+      position: absolute;
+      right: 10px;
+      font-size: 16px;
+      color: black;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 40px; 
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px 0px;
+      border-radius: 16px;
+      z-index: 10;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    .head-search-outline:focus-within .dropdown {
+      display: block; 
+    }
+    .dropdown-title {
+      font-size: 13px;
+      font-weight: 650;
+      margin:0px 0px 10px 10px;
+      text-align: left;
+    }
+    .head-enterprize {
+      display: flex;
+      position: relative;
+      top: 10px;
+    }
+    .head-company {
+      padding: 3.6px 6px;
+      font-size: 10px;
+      background-color: #EBF4FF;
+      color: #4B94FA;
+      border-radius: 11px;
+      font-weight: 500;
+      height: 10px;
+    }
+    .navline {
+      display: flex;
+      height: 48px;
+      width: 100%;
+    }
+    .navlist {
+      list-style: none;
+      display: flex;
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+      margin: 0px 0px;
+      padding: 0px 16px;
+    }
+    .nav {
+      margin: 0px 10px 0px 10px;
+    }
+    .nav-name {
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+      margin: 14px -20px 0px 120px;
+      padding: 0px 16px;
+    }
+    .nav-under{
+      width: 100%;
+      height: 4px;
+    }
+    .navlist .nav-under{
+      position: relative;
+      top: 12px;
+    }
+    .nav-name .nav-under{
+      position: relative;
+      top: 7.5px;
+    }
+    
+    .nav-name:hover #nnu{
+      background-color: rgb(255, 212, 0);
+    }
+    #n1:hover #u1{
+      background-color: rgb(255, 212, 0);
+    }
+    #n2:hover #u2{
+      background-color: rgb(255, 212, 0);
+    }
+    #n3:hover #u3{
+      background-color: rgb(255, 212, 0);
+    }
+    #n4:hover #u4{
+      background-color: rgb(255, 212, 0);
+    }
+    #n5:hover #u5{
+      background-color: rgb(255, 212, 0);
+    }
+    #n6:hover #u6{
+      background-color: rgb(255, 212, 0);
+    }
+    #n7:hover #u7{
+      background-color: rgb(255, 212, 0);
+    }
+    #n8:hover #u8{
+      background-color: rgb(255, 212, 0);
+    }
+    #n9:hover #u9{
+      background-color: rgb(255, 212, 0);
+    }
+    
+    span {
+      display: block;
+      width: 1px;
+      height: 20px;
+      background-color: #d0d0d0;
+      margin: 13px 10px 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="top1">전문가가 필요한순간,크몽</div>
+    <div class="top2">신규가입하고 <strong>10만원 쿠폰팩</strong> 받아가세요!ㅤ〉</div>
+  </div>
+  <header class="header">
+    <section class="section-head">
+      <div class="headline">
+        <h1 class="head-name">kmong</h1>
+        <ul class="head-list">
+          <li class="head-search">
+            <div class="head-search-outline">
+              <input type="text">
+              <i class="fa fa-search search-icon"></i>
+              <div class="dropdown">
+                <div class="dropdown-title">최근 검색어</div>
+              </div>
+            </div>
+          </li>
+          <li class="head-enterprize">
+            <div>엔터프라이즈</div>
+            <div class="head-company">기업용</div>
+          </li>
+          <li class="head">전문가 등록</li>
+          <li class="head">로그인</li>
+          <li class="head-sign">회원가입</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-nav">
+      <div class="navline">
+        <h3 class="nav-name"><div>전체카테고리 ∨<div id="nnu" class="nav-under"></div></div></h3>
+        <ul class="navlist">
+          <li id="n1" class="nav"><div>디자인<div id="u1" class="nav-under"></div></div></li>
+          <li id="n2" class="nav"><div>마케팅<div id="u2" class="nav-under"></div></div></li>
+          <li id="n3" class="nav"><div>영상ㆍ사진<div id="u3" class="nav-under"></div></div></li>
+          <li id="n4" class="nav"><div>ITㆍ프로그래밍<div id="u4" class="nav-under"></div></div></li>
+          <li id="n5" class="nav"><div>전자책ㆍVOD <div id="u5" class="nav-under"></div></div></li>
+        </ul>
+        <span></span>
+        <ul class="navlist">
+          <li id="n6" class="nav"><div>상위 2% Prime <div id="u6" class="nav-under"></div></div></li>
+          <li id="n7" class="nav"><div>포트폴리오 <div id="u7" class="nav-under"></div></div></li>
+          <li id="n8" class="nav"><div>프리랜서클럽 <div id="u8" class="nav-under"></div></div></li>
+          <li id="n9" class="nav"><div>크몽로그 <div id="u9" class="nav-under"></div></div></li>
+        </ul>
+      </div>
+    </section>
+  </header>
+  <hr>
+  <main>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+  </main>
+  <hr>
+  <footer>
+    <div id="footer" class="container">
+      <div id="footer-left">
+        <div id="footer-left-top" class="container">
+          <div id="footer-left-top-left" >
+            <div class="footer-left-top-box">
+              <div>고객센터</div>
+            </div>
+          </div>
+          <div id="footer-left-top-right">
+            <div class="footer-left-top-box">
+              <div>전문가센터</div>
+            </div>
+          </div>
+        </div>
+        <div id="footer-left-mid" class="container">
+          <div>10:30~18:00(점심시간 13:00~14:00)
+            주말,공휴일 휴무
+          </div>
+        </div>
+        <div id="footer-left-bottom" class="container">
+          <div>
+            <div>
+        
+            </div>
+            <div id="footer-left-bottom-right">
+              크몽은 서비스 중개 플랫폼이에요.
+              작업 의뢰는 전문가에게 직접 문의해 주세요.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-right">
+        <div id="footer-right-one">
+          <div class="footer-right-head">크몽</div>
+          <ul>
+            <li class="footer-standard">크몽 메인</li>
+            <li class="footer-standard">Prime</li>
+            <li class="footer-standard">엔터프라이즈</li>
+            <li class="footer-standard">프리랜서클럽</li>
+          </ul>
+          
+        </div>
+        <div id="footer-right-two">
+          <div class="footer-right-head">크몽 정보</div>
+          <ul>
+            <li class="footer-standard">서비스 소개</li>
+            <li class="footer-standard">인재영입</li>
+            <li class="footer-standard">제휴 광고</li>
+          </ul>
+        </div>
+        <div id="footer-right-three">
+         <div class="footer-right-head">관련사이트</div>
+         <ul>
+          <li class="footer-standard">크몽로그</li>
+          <li class="footer-standard">크몽 인스타그램</li>
+          <li class="footer-standard">크몽 유튜브</li>
+         </ul>
+        </div>
+        <div id="footer-right-four">
+          <div class="footer-right-head">지원</div>
+          <ul>
+            <li class="footer-standard">공지사항</li>
+            <li class="footer-standard">자주 묻는 질문</li>
+            <li class="footer-standard">약관 및 정책</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
