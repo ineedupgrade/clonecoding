@@ -234,3 +234,68 @@ span {
   font-weight: 300;
   margin: 10px 0px 10px 0px;
 }
+
+.main-section-container{
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0px 80px 0px;
+}
+
+.main-category-top-container{
+  display: flex;
+  list-style-type: none;
+}
+.main-readyto-category{
+  margin: 0px 120px 0px 120px;
+}
+.main-category-top{
+  background-color: rgb(250,250,252);
+}
+.main-category-bottom-container{
+  display: flex;
+  flex-direction: row;
+}
+.main-category-bottom-first{
+  background-color: rgb(250,250,252);
+}
+.main-category-bottom-second{
+  background-color: rgb(250,250,252);
+}
+.main-category-bottom-first-container{
+  display: flex;
+  list-style: none;
+}
+.main-category-bottom-second-container{
+  display: flex;
+  list-style: none;
+}
+.main-category-unit{
+  list-style: none;
+}
+.main-bestservice-section{
+  margin: 80px 0px 80px 0px;
+  
+}
+.main-bestservice{
+  margin: 0px 120px 0px 120px;
+}
+.main-bestservice-bottom{
+  display: flex;
+}
+.main-bestservice-top-botton{
+  display: flex;
+}
+.main-ineedpro-section{
+  margin: 80px 0px 80px 0px;
+}
+.main-ineedpro{
+  margin: 0px 120px 0px 120px;
+  padding: 0px 16px;
+}
+.main-livereview-section{
+  margin: 80px 0px 80px 0px;
+}
+.main-livereview{
+  margin: 0px 120px 0px 120px;
+  padding: 0px 16px;
+}
