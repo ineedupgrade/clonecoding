@@ -327,6 +327,101 @@ span {
   font-weight: 500;
   margin: 0px 10px 0px 20px;
 }
+.main-bestservice-top{
+  font-size: 25px;
+  font-weight: bold;
+}
+.main-bestservice-top-img{
+  height: 20px;
+  width: 38px;
+}
+.main-bestservice-mid {
+  margin-right: 10px;
+}
+.main-bestservice-mid-botton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-top: 8px;
+}
+.main-bestservice-mid-botton-back{
+  border: 1px solid rgb(185, 185, 185);
+  height: 36px;
+  padding: 0px 12px;
+  line-height: 21px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+.main-bestservice-bottom-head{
+  font-size: 15px;
+  margin-top: 5px;
+  width: 212px;
+}
+.main-bestservice-bottom-container {
+  display: flex;
+  margin: -50px 100px 0px 100px;
+  gap: 16px; 
+}
+.main-bestservice-bottom-first,
+.main-bestservice-bottom-second,
+.main-bestservice-bottom-third,
+.main-bestservice-bottom-fourth,
+.main-bestservice-bottom-fifth {
+flex: 1; 
+} 
+.main-bestservice-section{
+  margin: 80px 0px 80px 0px;
+}
+.main-bestservice{
+  margin: 0px 120px 0px 120px;
+}
+.main-bestservice-bottom-review{
+  height: 18px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.main-bestservice-bottom-price{
+  font-size: 14px;
+}
+.main-bestservice-bottom-who{
+  font-size: 12px;
+  color: rgb(114, 117, 133);
+  font-weight: 400;
+  margin-top: 10px;
+}
+.main-bestservice-bottom{
+  display: flex;
+}
+.main-bestservice-top-botton{
+  display: flex;
+}
+.main-bestservice-bottom-img{
+  height: 158.16px;
+  width: 212px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 1;
+}
+.main-bestservice-bottom-img-outline{
+  height: 158.16px;
+  width: 212px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow: hidden;
+  border: 0.5px solid rgb(221, 221, 221);
+}
+.main-bestservice-bottom-img:hover {
+  transform: scale(1.1);
+}
 
 .footer-container{
   display: flex;
@@ -452,3 +547,4 @@ span {
   font-size: 0.75rem;
   color: #9a9ba7;
 }
+
