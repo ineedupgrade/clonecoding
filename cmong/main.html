@@ -8,147 +8,803 @@
   <link rel="icon" href="image/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    .main-ineedpro-section{
-      margin: 80px 0px 80px 0px;
+  <style> 
+    .line{
+      border: width 0.1em; 
+      border-color:#fff;
+      color: #ffffff;
     }
-    .main-ineedpro{
-      margin: 0px 120px 0px 120px;
-      padding: 0px 16px;
-    }
-    .main-ineedpro-top{
+    .top {
+      width: 100%;
+      height: 48px;
+      background-color: rgb(255,212,0);
       display: flex;
     }
-    .cmong-youtube-img{
-      width: 692px;
-      height: 390px;
+    .top1 {
+      padding: 12px 200px 5px 140px;
+      font-size: 23px;
     }
-    .cmong-youtube{
-      width: 692px;
-      height: 390px;
+    .top2 {
+      padding: 15px 100px 5px 455px;
+      font-size: 16.5px;
     }
-    .main-livereview-section{
-      margin: 80px 0px 80px 0px;
-    }
-    .main-livereview{
-      margin: 0px 120px 0px 120px;
+    .section-head {
+      margin: 0px 120px;
       padding: 0px 16px;
+    }
+    .head-name {
+      font-weight: bold;
+      font-size: 25px;
+    }
+    .headline {
+      display: flex;
+      width: 1300px;
+      height: 66px;
+      align-items: center;
+      text-align: center;
+      justify-items: center;
+      position: sticky;
+      top: 0px;
+      background-color: white; 
+    }
+    .head-list {
+      list-style: none;
+      display: flex;
+      margin: 0px 40px;
+    }
+    .head {
+      position: relative;
+      top: 10px;
+      margin: 0px 15px 0px 15px;
+    }
+    .head-sign {
+      position: relative;
+      margin: 0px 0px 0px 25px;
+      z-index: 30;
+      padding: 10px 10px;
+      background-color: rgb(255,212, 0);
+      border-radius: 10px;
+    }
+    .head-search-outline {
+      border: 1px solid black;
+      border-radius: 20px;
+      width: 620px;
+      height: 40px;
+      margin: 0px 15px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 45px;
+    }
+    .head-search-outline:hover {
+      background-color: rgb(227, 227, 227);
+    }
+    input[type="text"]:hover {
+      background-color: rgb(227, 227, 227);
+    }
+    input[type="text"] {
+      flex: 1;
+      border: 0;
+      height: 100%;
+      font-size: 14px;
+      padding: 0;
+      outline: none;
+    }
+    .search-icon {
+      position: absolute;
+      right: 10px;
+      font-size: 16px;
+      color: black;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 40px; 
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px 0px;
+      border-radius: 16px;
+      z-index: 10;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    .head-search-outline:focus-within .dropdown {
+      display: block; 
+    }
+    .dropdown-title {
+      font-size: 13px;
+      font-weight: 650;
+      margin:0px 0px 10px 10px;
+      text-align: left;
+    }
+    .head-enterprize {
+      display: flex;
+      position: relative;
+      top: 10px;
+    }
+    .head-company {
+      padding: 3.6px 6px;
+      font-size: 10px;
+      background-color: white;
+      color: #4B94FA;
+      border-radius: 11px;
+      font-weight: 500;
+      height: 10px;
+    }
+    .navline {
+      display: flex;
+      height: 48px;
+      width: 100%;
+    }
+    .navlist {
+      list-style: none;
+      display: flex;
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+      margin: 0px 0px;
+      padding: 0px 16px;
+    }
+    .nav {
+      margin: 0px 10px 0px 10px;
+    }
+    .nav-name {
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+      margin: 14px -20px 0px 120px;
+      padding: 0px 16px;
+    }
+    .nav-under{
+      width: 100%;
+      height: 4px;
+    }
+    .navlist .nav-under{
+      position: relative;
+      top: 12px;
+    }
+    .nav-name .nav-under{
+      position: relative;
+      top: 7.5px;
+    }
+    
+    .nav-name:hover #nnu{
+      background-color: rgb(255, 212, 0);
+    }
+    #n1:hover #u1{
+      background-color: rgb(255, 212, 0);
+    }
+    #n2:hover #u2{
+      background-color: rgb(255, 212, 0);
+    }
+    #n3:hover #u3{
+      background-color: rgb(255, 212, 0);
+    }
+    #n4:hover #u4{
+      background-color: rgb(255, 212, 0);
+    }
+    #n5:hover #u5{
+      background-color: rgb(255, 212, 0);
+    }
+    #n6:hover #u6{
+      background-color: rgb(255, 212, 0);
+    }
+    #n7:hover #u7{
+      background-color: rgb(255, 212, 0);
+    }
+    #n8:hover #u8{
+      background-color: rgb(255, 212, 0);
+    }
+    #n9:hover #u9{
+      background-color: rgb(255, 212, 0);
+    }
+    
+    span {
+      display: block;
+      width: 1px;
+      height: 20px;
+      background-color:rgb(208, 208, 208);
+      margin: 13px 10px 0 10px;
     }
   </style>
 </head>
 <body>
-</head>
-<body>
   <main>
-    <section class="main-ineedpro-section">
-      <div class="main-ineedpro">
-        <div class="main-ineedpro-top">
-          <div class="main-ineedpro-top-left">
-            <h2 class="main-ineedpro-top-left-head">내게 필요한 모든 전문가</h2>
-            <div class="main-ineedpro-top-left-sub">
-              누적 거래 533만 건! <br>700여 개의 카테고리와 6만여 개 서비스에서 <br>필요한 모든 전문가를 만나보세요.
+    <div class="top">
+      <div class="top1">전문가가 필요한순간,크몽</div>
+      <div class="top2">신규가입하고 <strong>10만원 쿠폰팩</strong> 받아가세요!ㅤ〉</div>
+    </div>
+    <header class="header">
+      <section class="section-head">
+        <div class="headline" style="position: sticky; top: 0px; background-color: white; z-index: 100;">
+          <h1 class="head-name">kmong</h1>
+            <ul class="head-list">
+                <li class="head-search">
+                  <div class="head-search-outline">
+                    <input type="text">
+                    <i class="fa fa-search search-icon"></i>
+                    <div class="dropdown">
+                      <div class="dropdown-title">최근 검색어</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="head-enterprize">
+                  <div>엔터프라이즈</div>
+                  <div class="head-company">기업용</div>
+                </li>
+                <li class="head">전문가 등록</li>
+                <li class="head">로그인</li>
+                <li class="head-sign">회원가입</li>
+              </ul>
             </div>
+          </section>
+          <section class="section-nav">
+            <div class="navline">
+              <h3 class="nav-name">
+                <div>전체카테고리 ∨</div>
+                <div id="nnu" class="nav-under">
+                  <div id="category-container">
+                    <div class="category">
+                      <ul class="category-list1">
+                        <li class="category-head">비즈니스</li>
+                        <li class="category-unit">디자인</li>
+                        <li class="category-unit">ITㆍ프로그래밍</li>
+                        <li class="category-unit">영상ㆍ사진ㆍ음향</li>
+                        <li class="category-unit">마케팅</li>
+                        <li class="category-unit">번역ㆍ통역</li>
+                        <li class="category-unit">문서ㆍ글쓰기</li>
+                        <li class="category-unit">창업ㆍ사업</li>
+                        <li class="category-unit">주문제작</li>
+                        <li class="category-unit">세무ㆍ법무ㆍ노무</li>
+                      </ul>
+                    </div>
+                    <div class="category">
+                      <ul class="category-list">
+                        <li class="category-head">N잡ㆍ커리어</li>
+                        <li class="category-unit">취업ㆍ입시</li>
+                        <li class="category-unit">투잡ㆍ노하우</li>
+                        <li class="category-unit">직무역량레슨</li>
+                      </ul>
+                    </div>
+                    <div class="category">
+                      <ul class="category-list">
+                        <li class="category-head">취미ㆍ생활</li>
+                        <li class="category-unit">운세</li>
+                        <li class="category-unit">심리상담</li>
+                        <li class="category-unit">취미 레슨</li>
+                        <li class="category-unit">생활서비스</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </h3>
+              <ul class="navlist">
+                <li id="n1" class="nav">
+                  <div>디자인<div id="u1" class="nav-under"></div></div>
+                </li>
+                <li id="n2" class="nav">
+                  <div>마케팅<div id="u2" class="nav-under"></div></div>
+                </li>
+                <li id="n3" class="nav">
+                  <div>영상ㆍ사진<div id="u3" class="nav-under"></div></div>
+                </li>
+                <li id="n4" class="nav">
+                  <div>ITㆍ프로그래밍<div id="u4" class="nav-under"></div></div>
+                </li>
+                <li id="n5" class="nav">
+                  <div>전자책ㆍVOD<div id="u5" class="nav-under"></div></div>
+                </li>
+              </ul>
+              <span></span>
+              <ul class="navlist">
+                <li id="n6" class="nav">
+                  <div>상위 2% Prime<div id="u6" class="nav-under"></div></div>
+                </li>
+                <li id="n7" class="nav">
+                  <div>포트폴리오<div id="u7" class="nav-under"></div></div>
+                </li>
+                <li id="n8" class="nav">
+                  <div>프리랜서클럽<div id="u8" class="nav-under"></div></div>
+                </li>
+                <li id="n9" class="nav">
+                  <div>크몽로그<div id="u9" class="nav-under"></div></div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </header>            
+        <hr class="line">
+        <div class="main-section-container">
+          <section class="main-readytocategory">
+            <div class="main-readyto-category">
+              <h2 class="main-category-head">700여 개의 카테고리가 준비되어 있어요</h2>
+              <div class="main-category-container">
+                <div class="main-category-back">
+                  <div class="main-category-top">
+                    <div class="main-category-top-word"><strong>비즈니스</strong></div>
+                    <ul class="main-category-top-container">
+                      <li class="main-category-unit">
+                        <img class="main-category-img" src="image/category1-1.PNG">
+                        <div class="main-category-word">디자인</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img class="main-category-img" src="image/category1-2.PNG">
+                        <div class="main-category-word">ITㆍ프로그래밍</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img class="main-category-img" src="image/category1-3.PNG">
+                        <div class="main-category-word">영상ㆍ사진ㆍ음향</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img class="main-category-img" src="image/category1-4.PNG">
+                        <div class="main-category-word">마케팅</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img class="main-category-img" src="image/category1-5.PNG">
+                        <div class="main-category-word">번역ㆍ통역</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img class="main-category-img" src="image/category1-6.PNG">
+                        <div class="main-category-word">문서ㆍ글쓰기</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img class="main-category-img" src="image/category1-7.PNG">
+                        <div class="main-category-word">창업ㆍ사업</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img class="main-category-img" src="image/category1-8.PNG">
+                        <div class="main-category-word">주문제작</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img class="main-category-img" src="image/category1-9.PNG">
+                        <div class="main-category-word">세무ㆍ법무ㆍ노무</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="main-category-bottom-container">
+                  <div class="main-category-bottom-first">
+                    <strong>N잡ㆍ커리어</strong>
+                    <ul class="main-category-bottom-first-container">
+                      <li class="main-category-unit">
+                        <img src="image/category2-1.PNG" class="main-category-img">
+                        <div class="main-category-word">취업ㆍ입시</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img src="image/category2-2.PNG" class="main-category-img">
+                        <div class="main-category-word">투잡ㆍ노하우</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img src="image/category2-3.PNG" class="main-category-img">
+                        <div class="main-category-word">직무역량 레슨</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main-category-bottom-second">
+                    <strong>취미ㆍ생활</strong>
+                    <ul class="main-category-bottom-second-container">
+                      <li class="main-category-unit">
+                        <img src="image/category3-1.PNG" class="main-category-img">
+                        <div class="main-category-word">운세</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img src="image/category3-2.PNG" class="main-category-img">
+                        <div class="main-category-word">심리상담</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img src="image/category3-3.PNG" class="main-category-img">
+                        <div class="main-category-word">취미레슨</div>
+                      </li>
+                      <li class="main-category-unit">
+                        <img src="image/category3-4.PNG" class="main-category-img">
+                        <div class="main-category-word">생활서비스</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="main-category-bottom-third">
+                    <li class="main-category-unit">
+                      <img src="image/category4-1.PNG" class="main-category-img0">
+                      <div class="main-category-word0">엔터프라이즈</div>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="main-bestservice-section">
+            <div class="main-bestservice">
+              <div class="main-bestservice-top">
+                프리랜서 마켓 No.1 크몽, 인기 서비스
+                <img class="main-bestservice-top-img" src="image/hot.PNG">
+              </div>
+              <section class="main-bestservice-top-botton">
+                <div class="main-bestservice-mid">
+                  <div class="main-bestservice-mid-botton-back">
+                    <div class="main-bestservice-mid-botton">
+                      로고디자인
+                    </div>
+                  </div>
+                </div>
+                <div class="main-bestservice-mid">
+                  <div class="main-bestservice-mid-botton-back">
+                    <div class="main-bestservice-mid-botton">
+                      인스타그램 관리
+                    </div>
+                  </div>
+                </div>
+                <div class="main-bestservice-mid">
+                  <div class="main-bestservice-mid-botton-back">
+                    <div class="main-bestservice-mid-botton">
+                      홈페이지
+                    </div>
+                  </div>
+                </div>
+                <div class="main-bestservice-mid">
+                  <div class="main-bestservice-mid-botton-back">
+                    <div class="main-bestservice-mid-botton">
+                      스토어 마케팅
+                    </div>
+                  </div>
+                </div>
+                <div class="main-bestservice-mid">
+                  <div class="main-bestservice-mid-botton-back">
+                    <div class="main-bestservice-mid-botton">
+                      영어 번역
+                    </div>
+                  </div>
+                </div>
+                <div class="main-bestservice-mid">
+                  <div class="main-bestservice-mid-botton-back">
+                    <div class="main-bestservice-mid-botton">
+                      투잡ㆍ제태크 전자책
+                    </div>
+                  </div>
+                </div>
+                <div class="main-bestservice-mid">
+                  <div class="main-bestservice-mid-botton-back">
+                    <div class="main-bestservice-mid-botton">
+                      사업자 법률 자문
+                    </div>
+                  </div>
+                </div>
+                <div class="main-bestservice-mid">
+                  <div class="main-bestservice-mid-botton-back">
+                    <div class="main-bestservice-mid-botton">
+                      심리 상담
+                    </div>
+                  </div>
+                </div>
+                <div class="main-bestservice-mid">
+                  <div class="main-bestservice-mid-botton-back">
+                    <div class="main-bestservice-mid-botton">
+                      청소ㆍ수리ㆍ설치
+                    </div>
+                  </div>
+                </div>
+                <div class="main-bestservice-mid">
+                  <div class="main-bestservice-mid-botton-back">
+                    <div class="main-bestservice-mid-botton">
+                      사주
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+          <section class="main-bestservice-bottom-container"> 
+            <div class="main-bestservice-bottom-first">
+              <div class="main-bestservice-bottom-img-outline">
+                  <img class="main-bestservice-bottom-img" src="image/best-1.PNG">
+              </div>
+              <h3 class="main-bestservice-bottom-head">크몽어워즈 1등상 수상|대표가 포트폴리오 퀄리티로 제작</h3>
+              <div class="main-bestservice-bottom-review">⭐4.9(3,947)</div>
+              <div class="main-bestservice-price">75,000원~</div>
+              <div class="main-bestservice-bottom-who">그리미아트디자인</div>
           </div>
-          <div class="cmong-yotube">
-            <img class="cmong-youtube-img" src="/Users/hyunwoo/develoment/git/workspace/cloneProject/cmong/image/스크린샷 2024-08-15 오후 4.00.21.png" alt="">
+          
+          <div class="main-bestservice-bottom-second">
+              <div class="main-bestservice-bottom-img-outline">
+                  <img class="main-bestservice-bottom-img" src="image/best-2.PNG">
+              </div>
+              <h3 class="main-bestservice-bottom-head">로고제작 랭키1위 KS 11년연속1위 크몽어워즈수상</h3>
+              <div class="main-bestservice-bottom-review">⭐4.9(2,615)</div>
+              <div class="main-bestservice-price">150,000원~</div>
+              <div class="main-bestservice-bottom-who">지구컴즈</div>
           </div>
-        </div>
-        <div class="main-ineedpro-bottom-container">
-          <div class="main-ineedpro-bottom-first-outline">
-            <div class="main-ineedpro-bottom-first">
-              <h3 class="main-ineedpro-bottom-first-head">빠른 커뮤니케이션</h3>
-              <div class="main-ineedpro-bottom-first-bottom">전문가와 실시간 대화로<br>빠르게 문의하고 거래 할 수 있어요.</div>
-            </div>
+          
+          <div class="main-bestservice-bottom-third">
+              <div class="main-bestservice-bottom-img-outline">
+                  <img class="main-bestservice-bottom-img" src="image/best-3.PNG">
+              </div>
+              <h3 class="main-bestservice-bottom-head">|크몽마스터|대기업 협력사|로고|네이밍|명함|로고디자인</h3>
+              <div class="main-bestservice-bottom-review">⭐4.9(704)</div>
+              <div class="main-bestservice-price">50,000원~</div>
+              <div class="main-bestservice-bottom-who">보울디자인</div>
           </div>
-          <div class="main-ineedpro-bottom-second-outline">
-            <div class="main-ineedpro-bottom-second">
-              <h3 class="main-ineedpro-bottom-second-head">크몽 안전결제</h3>
-              <div class="main-ineedpro-bottom-second-bottom">에스크로 결제 시스템으로<br>소중한 돈을 안전히 보호해 드려요.</div>
-            </div>
+          
+          <div class="main-bestservice-bottom-fourth">
+              <div class="main-bestservice-bottom-img-outline">
+                  <img class="main-bestservice-bottom-img" src="image/best-4.PNG">
+              </div>
+              <h3 class="main-bestservice-bottom-head">크몽이 엄선한 진정한 프리미엄|하루3분만 제작합니다.</h3>
+              <div class="main-bestservice-bottom-review">⭐4.9(3,233)</div>
+              <div class="main-bestservice-price">95,000원~</div>
+              <div class="main-bestservice-bottom-who">원스팟디자인</div>
           </div>
-          <div class="main-ineedpro-bottom-third-outline">
-            <div class="main-ineedpro-bottom-third">
-              <h3 class="main-ineedpro-bottom-third-head">만족스러운 결과물</h3>
-              <div class="main-ineedpro-bottom-third-bottom">평균만족도 98.8% <br>많은 회원들이 만족하고 있어요.</div>
-            </div>
+          <div class="main-bestservice-bottom-fifth">
+              <div class="main-bestservice-bottom-img-outline">
+                  <img class="main-bestservice-bottom-img" src="image/best-5.PNG">
+              </div>
+              <h3 class="main-bestservice-bottom-head">|심플대장| 대기업이 인정한 김로고 로고제작</h3>
+              <div class="main-bestservice-bottom-review">⭐4.9(1,938)</div>
+              <div class="main-bestservice-price">50,000원~</div>
+              <div class="main-bestservice-bottom-who">김로고</div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="main-livereview-section">
-      <div class="main-livereview">
-        <h2 class="main-livereview-top">크몽을 이용한 회원들의 생생한 후기</h2>
-        <div class="main-livereview-top-1">301만 건의 리뷰에서 평균 만족도는 98.8%에 달했어요.</div>
-        <section class="main-livereview-bottom-container">
-          <article class="main-livereview-bottom-first">
-            <div class="main-livereview-bottom-youtube">
-
+          </section>
+          <section class="main-ineedpro-section">
+            <div class="main-ineedpro">
+              <div class="main-ineedpro-top">
+                <div class="main-ineedpro-top-left">
+                  <h2 class="main-ineedpro-top-left-head">내게 필요한 모든 전문가</h2>
+                  <div class="main-ineedpro-top-left-sub">
+                    누적 거래 533만 건! <br>700여 개의 카테고리와 6만여 개 서비스에서 <br>필요한 모든 전문가를 만나보세요.
+                  </div>
+                </div>
+                <div class="cmong-yotube">
+                  <img class="cmong-youtube-img" src="./image/youtube.PNG" alt="">
+                </div>
+              </div>
+              <div class="main-ineedpro-bottom-container">
+                <div class="main-ineedpro-bottom-first-outline">
+                  <div class="main-ineedpro-bottom-first">
+                    <h3 class="main-ineedpro-bottom-head">빠른 커뮤니케이션</h3>
+                    <div class="main-ineedpro-bottom-bottom">전문가와 실시간 대화로<br>빠르게 문의하고 거래 할 수 있어요.</div>
+                  </div>
+                </div>
+                <div class="main-ineedpro-bottom-second-outline">
+                  <div class="main-ineedpro-bottom-second">
+                    <h3 class="main-ineedpro-bottom-head">크몽 안전결제</h3>
+                    <div class="main-ineedpro-bottom-bottom">에스크로 결제 시스템으로<br>소중한 돈을 안전히 보호해 드려요.</div>
+                  </div>
+                </div>
+                <div class="main-ineedpro-bottom-third-outline">
+                  <div class="main-ineedpro-bottom-third">
+                    <h3 class="main-ineedpro-bottom-head">만족스러운 결과물</h3>
+                    <div class="main-ineedpro-bottom-bottom">평균만족도 98.8% <br>많은 회원들이 만족하고 있어요.</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="main-livereview-bottom-youtube-bottom">
-              <div class="main-livereview-bottom-youtube-bottom-left">안재식당|</div>
-              <div class="main-livereview-bottom-youtube-bottom-right">자영업자</div>
+          </section>
+          <section class="main-livereview-section">
+            <div class="main-livereview">
+              <h2 class="main-livereview-top">크몽을 이용한 회원들의 생생한 후기</h2>
+              <div class="main-livereview-top-1">301만 건의 리뷰에서 평균 만족도는 98.8%에 달했어요.</div>
+              <section class="main-livereview-bottom-container">
+                <article class="main-livereview-bottom-first">
+                  <div class="main-livereview-bottom-youtube">
+                    <img class="main-livereview-bottom-youtube1" src="./image/live-yuotube-01.png" alt="">
+                  </div>
+                  <div class="main-livereview-bottom-youtube-bottom">
+                    <div class="main-livereview-bottom-youtube-bottom-left">안재식당|</div>
+                    <div class="main-livereview-bottom-youtube-bottom-right">자영업자</div>
+                  </div>
+                </article>
+                <article class="main-livereview-bottom-second">
+                  <div class="main-livereview-bottom-youtube">
+                    <img class="main-livereview-bottom-youtube1" src="./image/live-youtube-02.png" alt="">
+                  </div>
+                  <div class="main-livereview-bottom-youtube-bottom">
+                    <div class="main-livereview-bottom-youtube-bottom-left">필로스토리|</div>
+                    <div class="main-livereview-bottom-youtube-bottom-right">2인 창업팀</div>
+                  </div>
+                </article>
+                <article class="main-livereview-bottom-third">
+                  <div class="main-livereview-bottom-youtube">
+                    <img class="main-livereview-bottom-youtube1" src="./image/live-youtube-03.png" alt="">
+                  </div>
+                  <div class="main-livereview-bottom-youtube-bottom">
+                    <div class="main-livereview-bottom-youtube-bottom-left">데이터비|</div>
+                    <div class="main-livereview-bottom-youtube-bottom-right">엔터프라이즈 고객</div>
+                  </div>
+                </article>
+              </section>
             </div>
-          </article>
-          <article class="main-livereview-bottom-second">
-            <div class="main-livereview-bottom-youtube">
-
+          </section>
+          <section class="main-workchange-section">
+            <div class="main-workchange">
+              <div class="main-workchange-top-container">
+                <h2 class="main-workchange-top">크몽, 일하는 방식을 바꾸다</h2>
+                <div class="main-workchange-top1">크몽으로 똑똑하게 일하는 사람들의 이야기를 들어보세요</div>
+              </div>
+              <div class="main-workchage-bottom-container">
+                <div class="main-workchage-bottom">
+                  <div class="main-workchange-bottom-img-outline">
+                    <img src="./image/workchange1.png" alt="" class="main-workchange-img">
+                  </div>
+                  <div class="main-workspace-bottom-introduce">
+                    <div class="main-workspace-bottom-introduce-head">프리랜서로 빠르게 성공할 수 있었던 이유</div>
+                    <div class="main-workspace-bottom-introduce-bottom">크몽 전문가|주식회사플린랩스</div>
+                  </div>
+                </div>
+                <div class="main-workchage-bottom">
+                  <div class="main-workchange-bottom-img-outline">
+                    <img src="./image/workchange2.png" alt="" class="main-workchange-img">
+                  </div>
+                  <div class="main-workspace-bottom-introduce">
+                   <div class="main-workspace-bottom-introduce-head">전 세계에서 자유롭게 일하다</div>
+                   <div class="main-workspace-bottom-introduce-bottom">크몽 전문가|고유언니들</div>
+                  </div>
+                </div>
+                <div class="main-workchage-bottom">
+                  <div class="main-workchange-bottom-img-outline">
+                    <img src="./image/workchange3.png" alt="" class="main-workchange-img">
+                  </div>
+                  <div class="main-workspace-bottom-introduce">
+                    <div class="main-workspace-bottom-introduce-head">변화하는 AI시대를 일에 활용하는 방법</div>
+                    <div class="main-workspace-bottom-introduce-bottom">크몽어워즈 AI선구자상 수상자3인</div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-workchange-article">
+                <div class="main-workchange-article-word">크몽로그에서 다양한 아티클을 만나보세요</div>
+              </div>
             </div>
-            <div class="main-livereview-bottom-youtube-bottom">
-              <div class="main-livereview-bottom-youtube-bottom-left">필로스토리|</div>
-              <div class="main-livereview-bottom-youtube-bottom-right">2인 창업팀</div>
-            </div>
-          </article>
-          <article class="main-livereview-bottom-third">
-            <div class="main-livereview-bottom-youtube">
-              <div></div>
-            </div>
-            <div class="main-livereview-bottom-youtube-bottom">
-              <div class="main-livereview-bottom-youtube-bottom-left">데이터비|</div>
-              <div class="main-livereview-bottom-youtube-bottom-right">엔터프라이즈 고객</div>
-            </div>
-          </article>
-        </section>
-      </div>
-    </section>
-
-    <section class="main-workchange-section">
-      <div class="main-workchange">
-        <div class="main-workchange-top-container">
-          <h2 class="main-workchange-top">크몽, 일하는 방식을 바꾸다</h2>
-          <div class="main-workchange-top">크몽으로 똑똑하게 일하는 사람들의 이야기를 들어보세요</div>
-        </div>
-        <div class="main-workchage-bottom-container">
-          <div class="main-workchage-bottom">
-            <div class="main-workchange-bottom-img-outline">
-              <img src="" alt="" class="main-workchange-img">
-            </div>
-            <div class="main-workspace-bottom-introduce-head">프리랜서로 빠르게 성공할 수 있었던 이유</div>
-            <div class="main-workspace-bottom-introduce-bottom">크몽 전문가|주식회사플린랩스</div>
-          </div>
-          <div class="main-workchage-bottom">
-            <div class="main-workchange-bottom-img-outline">
-              <img src="" alt="" class="main-workchange-img">
-            </div>
-            <div class="main-workspace-bottom-introduce-head">전 세계에서 자유롭게 일하다</div>
-            <div class="main-workspace-bottom-introduce-bottom">크몽 전문가|고유언니들</div>
-          </div>
-
-          <div class="main-workchage-bottom">
-            <div class="main-workchange-bottom-img-outline">
-              <img src="" alt="" class="main-workchange-img">
-            </div>
-            <div class="main-workspace-bottom-introduce-head">변화하는 AI시대를 일에 활용하는 방법</div>
-            <div class="main-workspace-bottom-introduce-bottom">크몽어워즈 AI선구자상 수상자3인</div>
-          </div>
-        </div>
-        <div class="main-workchange-article">
-          <div class="main-workchange-article-word">크몽로그에서 다양한 아티클을 만나보세요</div>
-        </div>
-      </div>
-    </section>
+          </section>
+        </div>      
     <section class="main-proranking-section">
-      <div class="main-proranking"></div>
+      <div class="main-proranking">
+        <div class="main-proranking-head">크몽 전문가 순위</div>
+        <div class="main-proranking-head1">상위 카테고리에서 가장 많이 판매한 인기 전문가에요.</div>
+        <div class="main-proranking-container">
+          <ul class="proranking">
+            <li class="proranking-unit-head-top"><div class="proranking-unit-head-top-word">로고 디자인</div></li>
+            <li class="proranking-unit-head">
+              <div class="ranking-line"><img class="ranking-img" src="./image/ranking-01.png" alt=""></div>
+              <div class="proranking-unit-container">
+                <div class="get-price-top">1,383,612,120원</div>
+                <div class="company-name">DAcompany</div>
+              </div>
+              <div class="unit-img-outline"><img class="unit-img" src="./image/DAcompany.png" alt=""></div>
+            </li>
+            <div class="unit-container">
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-02.png" alt=""></div>
+                <div class="proranking-unit-container">
+                <div class="get-price">1,055,464,000원</div>
+                <div class="company-name">그리미아트디자인</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/그리미아트디자인.png" alt=""></div>
+              </li>
+              <div class="cut-line"></div>
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-03.png" alt=""></div>
+                <div class="proranking-unit-container">
+                <div class="get-price">1,022,968,283원</div>
+                <div class="company-name">지구컴즈</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/지구컴즈.png" alt=""></div>
+              </li>
+              <div class="cut-line"></div>
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-04.png" alt=""></div>
+                <div class="proranking-unit-container">
+                  <div class="get-price">759,056,986원</div>
+                  <div class="company-name">로고고디자인</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/로고고디자인.png" alt=""></div>
+              </li>
+              <div class="cut-line"></div>
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-05.png" alt=""></div>
+                <div class="proranking-unit-container">
+                  <div class="get-price">741,172,720원</div>
+                  <div class="company-name">원스팟디자인</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/원스팟디자인.png" alt=""></div>
+              </li>
+            </div>
+          </ul>
+          <ul class="proranking">
+            <li class="proranking-unit-head-top"><div class="proranking-unit-head-top-word">제품</div></li>
+            <li class="proranking-unit-head">
+              <div class="ranking-line"><img class="ranking-img" src="./image/ranking-01.png" alt=""></div>
+              <div class="proranking-unit-container">
+               <div class="get-price-top">442,948,120원</div>
+               <div class="company-name">착한스튜디오</div>
+              </div>
+              <div class="unit-img-outline"><img class="unit-img" src="./image/착한스튜디오.png" alt=""></div>
+            </li>
+            <div class="unit-container">
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-02.png" alt=""></div>
+                <div class="proranking-unit-container">
+                  <div class="get-price">384,632,600원</div>
+                  <div class="company-name">춤추는포토그래퍼</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/춤추는포토그래퍼.png" alt=""></div>
+              </li>
+              <div class="cut-line"></div>
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-03.png" alt=""></div>
+                <div class="proranking-unit-container">
+                <div class="get-price">331,667,442원</div>
+                <div class="company-name">그랑팩토리</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/그랑팩토리.png" alt=""></div>
+              </li>
+              <div class="cut-line"></div>
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-04.png" alt=""></div>
+                <div class="proranking-unit-container">
+                  <div class="get-price">270,107,500원</div>
+                  <div class="company-name">감자팩토리</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/감자팩토리.png" alt=""></div>
+              </li>
+              <div class="cut-line"></div>
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-05.png" alt=""></div>
+                <div class="proranking-unit-container"> 
+                  <div class="get-price">240,636,600원</div>
+                  <div class="company-name">Phoenix</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/Phoenix.png" alt=""></div>
+              </li>
+            </div>
+          </ul>
+          <ul class="proranking">
+            <li class="proranking-unit-head-top"><div class="proranking-unit-head-top-word">홈페이지 신규 제작</div></li>
+            <li class="proranking-unit-head">
+              <div class="ranking-line"><img class="ranking-img" src="./image/ranking-01.png" alt=""></div>
+              <div class="proranking-unit-container"> 
+                <div class="get-price-top">1,475,845,000원</div>
+                <div class="company-name">더블유포지션</div>
+              </div>
+              <div class="unit-img-outline"><img class="unit-img" src="./image/더블유포지션.png" alt=""></div>
+            </li>
+            <div class="unit-container">
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-02.png" alt=""></div>
+                <div class="proranking-unit-container">
+                  <div class="get-price">1,105,043,485원</div>
+                  <div class="company-name">홈페이지제작전문웹드림</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/홈페이지제작전문웹드림.png" alt=""></div>
+              </li>
+              <div class="cut-line"></div>
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-03.png" alt=""></div>
+                <div class="proranking-unit-container">
+                  <div class="get-price">663,050,918원</div>
+                  <div class="company-name">개발자홍효식</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/개발자홍효식.png" alt=""></div>
+              </li>
+              <div class="cut-line"></div>
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-04.png" alt=""></div>
+                <div class="proranking-unit-container">
+                  <div class="get-price">374,458,884원</div>
+                  <div class="company-name">영앤스마트</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/영앤스마트.png" alt=""></div>
+              </li>
+              <div class="cut-line"></div>
+              <li class="proranking-unit">
+                <div class="ranking-line"><img class="ranking-img" src="./image/ranking-05.png" alt=""></div>
+                <div class="proranking-unit-container">
+                  <div class="get-price">286,090,408원</div>
+                  <div class="company-name">모두메이드</div>
+                </div>
+                <div class="unit-img-outline"><img class="unit-img" src="./image/모두메이드.png" alt=""></div>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 <hr class="line">
